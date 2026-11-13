@@ -76,3 +76,15 @@ With the CP1 PDF and manifest at repository root, run from `starter/`:
 This stage validates the corpus SHA256; ingests 35 PDF pages; builds fixed-size strategy A (500 chars, 50 overlap) and paragraph-aware strategy B (max 650 chars); preserves `document_id`, `source`, physical PDF `page`, and filterable `chapter` metadata. It writes real JSONL chunk exports, audit diagnostics, and statistics to `starter/results/`. Strategy C will reuse B chunks at retrieval time with metadata filtering. See `../docs/CP3_INGESTION.md` and `results/cp3_statistics.json`.
 
 **Important:** The provided `python -m src.run` full-pipeline entry remains TODO until CP4/CP5. Running CP3 does not create embeddings or a vector index.
+
+## CP4: real embeddings and pgvector retrieval (implemented)
+
+```bash
+cd starter
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m src.cp3
+.venv/Scripts/python.exe -m src.cp4
+.venv/Scripts/python.exe -m unittest discover -s tests -v
+```
+
+`src.cp4` indexes 170 fixed chunks as A and 160 paragraph chunks as B in PostgreSQL + pgvector. C reuses B's vectors with optional `chapter` filtering. Local CPU `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions) is used for both documents and queries; no embedding API key needed. Run artifacts and smoke top-3 traces are saved in `results/cp4_*`. See `../docs/CP4_VECTOR_STORAGE.md`. Benchmark dev/test evaluation and manual audit are intentionally deferred to CP5.

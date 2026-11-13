@@ -1,0 +1,178 @@
+[
+  {
+    "question": "What is a Python variable?",
+    "strategy": "A",
+    "filter": null,
+    "retrieval_seconds": 0.0243,
+    "top3": [
+      {
+        "chunk_id": "fixed-ac1083f7792256308dda",
+        "page": 36,
+        "chapter": "chapter_2",
+        "score": 0.630512,
+        "text_preview": "14 Chapter 2. Variables, expressions and statements\n2.9 Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram"
+      },
+      {
+        "chunk_id": "fixed-537cc303fbd82bac8a95",
+        "page": 29,
+        "chapter": "chapter_1",
+        "score": 0.602703,
+        "text_preview": "1.9. Exercises 7\n\nprint statement:An instruction that causes the Python interpreter to display a value on\n       the screen.\n\noperator:A special symbol that represents a simple com"
+      },
+      {
+        "chunk_id": "fixed-e8a9f200f1a7e335d22b",
+        "page": 32,
+        "chapter": "chapter_2",
+        "score": 0.599246,
+        "text_preview": " the structure of the program, and they cannot be used as variable names.\nPython 3 has these keywords:\nFalse class finally is return\nNone continue for lambda try\nTrue def from nonl"
+      }
+    ]
+  },
+  {
+    "question": "What is a Python variable?",
+    "strategy": "B",
+    "filter": null,
+    "retrieval_seconds": 0.0364,
+    "top3": [
+      {
+        "chunk_id": "paragraph-6f986a6b4992bad3a7a7",
+        "page": 36,
+        "chapter": "chapter_2",
+        "score": 0.627701,
+        "text_preview": "14 Chapter 2. Variables, expressions and statements\n2.9 Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram"
+      },
+      {
+        "chunk_id": "paragraph-2d2ef0b895e0e0db9ee6",
+        "page": 31,
+        "chapter": "chapter_2",
+        "score": 0.599667,
+        "text_preview": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refe"
+      },
+      {
+        "chunk_id": "paragraph-61a6e79256b1aafefa75",
+        "page": 29,
+        "chapter": "chapter_1",
+        "score": 0.561846,
+        "text_preview": "1.9. Exercises 7\n\nprint statement:An instruction that causes the Python interpreter to display a value on\n       the screen.\n\noperator:A special symbol that represents a simple com"
+      }
+    ]
+  },
+  {
+    "question": "What is a Python variable?",
+    "strategy": "C",
+    "filter": null,
+    "retrieval_seconds": 0.025,
+    "top3": [
+      {
+        "chunk_id": "paragraph-6f986a6b4992bad3a7a7",
+        "page": 36,
+        "chapter": "chapter_2",
+        "score": 0.627701,
+        "text_preview": "14 Chapter 2. Variables, expressions and statements\n2.9 Glossary\n\nvariable:A name that refers to a value.\n\nassignment:A statement that assigns a value to a variable.\n\nstate diagram"
+      },
+      {
+        "chunk_id": "paragraph-2d2ef0b895e0e0db9ee6",
+        "page": 31,
+        "chapter": "chapter_2",
+        "score": 0.599667,
+        "text_preview": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refe"
+      },
+      {
+        "chunk_id": "paragraph-61a6e79256b1aafefa75",
+        "page": 29,
+        "chapter": "chapter_1",
+        "score": 0.561846,
+        "text_preview": "1.9. Exercises 7\n\nprint statement:An instruction that causes the Python interpreter to display a value on\n       the screen.\n\noperator:A special symbol that represents a simple com"
+      }
+    ]
+  },
+  {
+    "question": "How do turtle graphics draw squares?",
+    "strategy": "A",
+    "filter": null,
+    "retrieval_seconds": 0.0167,
+    "top3": [
+      {
+        "chunk_id": "fixed-56a6d6bc405c483147a9",
+        "page": 52,
+        "chapter": "chapter_4",
+        "score": 0.603323,
+        "text_preview": "either down or up; if the pen is down, the Turtle\nleaves a trail when it moves. The methodspuandpdstand for \u201cpen up\u201d and \u201cpen down\u201d.\n\nTo draw a right angle, add these lines to the "
+      },
+      {
+        "chunk_id": "fixed-d377c414a2deb0d4fffa",
+        "page": 54,
+        "chapter": "chapter_4",
+        "score": 0.569236,
+        "text_preview": "32 Chapter 4. Case study: interface design\n4.4 Encapsulation\n\nThe first exercise asks you to put your square-drawing code into a function definition and\nthen call the function, pas"
+      },
+      {
+        "chunk_id": "fixed-dff87e2b69ce8e5ba075",
+        "page": 53,
+        "chapter": "chapter_4",
+        "score": 0.560201,
+        "text_preview": "rite a function calledsquarethat takes a parameter namedt, which is a turtle. It\n       should use the turtle to draw a square.\n       Write a function call that passesbobas an arg"
+      }
+    ]
+  },
+  {
+    "question": "How do turtle graphics draw squares?",
+    "strategy": "B",
+    "filter": null,
+    "retrieval_seconds": 0.0145,
+    "top3": [
+      {
+        "chunk_id": "paragraph-a5bfd1146397961df166",
+        "page": 53,
+        "chapter": "chapter_4",
+        "score": 0.648731,
+        "text_preview": "This version is actually a little different from the previous square-drawing code because it\nmakes another turn after drawing the last side of the square. The extra turn takes more"
+      },
+      {
+        "chunk_id": "paragraph-6b3863c3810c03f5e917",
+        "page": 52,
+        "chapter": "chapter_4",
+        "score": 0.629485,
+        "text_preview": "The argument offdis a distance in pixels, so the actual size depends on your display.\n\nOther methods you can call on a Turtle arebkto move backward,ltfor left turn, andrt\nright tur"
+      },
+      {
+        "chunk_id": "paragraph-0e5b77315d5e2afb4644",
+        "page": 54,
+        "chapter": "chapter_4",
+        "score": 0.555743,
+        "text_preview": "32 Chapter 4. Case study: interface design\n4.4 Encapsulation\n\nThe first exercise asks you to put your square-drawing code into a function definition and\nthen call the function, pas"
+      }
+    ]
+  },
+  {
+    "question": "How do turtle graphics draw squares?",
+    "strategy": "C",
+    "filter": {
+      "chapter": "chapter_4"
+    },
+    "retrieval_seconds": 0.0347,
+    "top3": [
+      {
+        "chunk_id": "paragraph-a5bfd1146397961df166",
+        "page": 53,
+        "chapter": "chapter_4",
+        "score": 0.648731,
+        "text_preview": "This version is actually a little different from the previous square-drawing code because it\nmakes another turn after drawing the last side of the square. The extra turn takes more"
+      },
+      {
+        "chunk_id": "paragraph-6b3863c3810c03f5e917",
+        "page": 52,
+        "chapter": "chapter_4",
+        "score": 0.629485,
+        "text_preview": "The argument offdis a distance in pixels, so the actual size depends on your display.\n\nOther methods you can call on a Turtle arebkto move backward,ltfor left turn, andrt\nright tur"
+      },
+      {
+        "chunk_id": "paragraph-0e5b77315d5e2afb4644",
+        "page": 54,
+        "chapter": "chapter_4",
+        "score": 0.555743,
+        "text_preview": "32 Chapter 4. Case study: interface design\n4.4 Encapsulation\n\nThe first exercise asks you to put your square-drawing code into a function definition and\nthen call the function, pas"
+      }
+    ]
+  }
+]

@@ -2,3 +2,7 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+
+# CP4 - real CPU-only sentence embeddings (no API key required)
+sentence-transformers==6.3.0
+torch==2.15.0

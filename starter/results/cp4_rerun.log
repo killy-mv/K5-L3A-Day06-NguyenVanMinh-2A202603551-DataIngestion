@@ -1,0 +1,50 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 4119.16it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+A stored 170 actual vectors, cache=True
+B stored 160 actual vectors, cache=True
+{
+  "stage": "CP4",
+  "timestamp_utc": "2026-11-13T11:01:20.945175+00:00",
+  "embedding_provider": "local_sentence_transformers",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "max_seq_length": 256,
+  "device": "cpu",
+  "normalized_embeddings": true,
+  "similarity": "exact cosine via pgvector <=>",
+  "vector_store": "PostgreSQL + pgvector",
+  "physical_collections": [
+    "A",
+    "B"
+  ],
+  "C_policy": "same physical B index; use chapter filtering when provided",
+  "model_load_seconds": 7.588,
+  "strategies": {
+    "A": {
+      "chunks": 170,
+      "cached_vectors": true,
+      "embedding_seconds": 0.0,
+      "database_upsert_seconds": 0.124,
+      "stored": 170,
+      "obsolete_removed": 0
+    },
+    "B": {
+      "chunks": 160,
+      "cached_vectors": true,
+      "embedding_seconds": 0.0,
+      "database_upsert_seconds": 0.137,
+      "stored": 160,
+      "obsolete_removed": 0
+    }
+  },
+  "stored_counts": {
+    "A": 170,
+    "B": 160
+  },
+  "smoke_cases": 2,
+  "smoke_runs": 6,
+  "api_cost_usd": 0,
+  "note": "No frozen dev/test questions queried and no Hit@1/Hit@3 computed."
+}
