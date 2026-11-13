@@ -1,0 +1,143 @@
+{
+  "audit_type": "Day06 final pre-submission artifact check",
+  "automated_checks": 26,
+  "passed": 26,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Corpus >=30 qualifying pages",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "PDF hash unchanged",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Source permission documented",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Gold count/split",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Gold SHA256 unchanged",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Filters (>=3, >=1 test)",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Strategy A chunk count",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Strategy A valid metadata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Strategy B chunk count",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Strategy B valid metadata",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Real 384-d model and database count",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "dev traces",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "dev full text provenance",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "test traces",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "test full text provenance",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Pre-test selection immutable Dev hash",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Selected B (Dev only)",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Summary 60 queries",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Manual-coherence audit entries (AI assisted)",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Grounding 5 test x 3 strategies (AI assisted)",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Metadata 5 test x top3 x 3 strategies",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Experiment log A/B/C",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Individual report and CP docs exist",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Resource measurement recorded",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "No tracked environment/key/virtualenv/cache files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "No common API tokens in committed text",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "manual_gate_remaining": [
+    "Student independently confirm AI-assisted coherence/grounding ratings",
+    "Push final CP6 changes and submit repository link to instructor",
+    "Check school/course data redistribution policy and GitHub sharing appropriateness"
+  ]
+}

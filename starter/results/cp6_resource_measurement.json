@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-11-13T11:24:40.792917+00:00",
+  "stage": "CP6_embedding_cpu_resource_measurement",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "device": "cpu",
+  "model_load_seconds": 13.5631,
+  "measurement": "in-process forward-pass encoding time; excludes model load, PDF parse, DB upsert, OS package install; warmed CPU and filesystem cache",
+  "batch_size": 32,
+  "C_policy": "C reuses B vectors; no additional embedding computation",
+  "A": {
+    "chunks": 170,
+    "trials_seconds": [
+      5.6267,
+      4.8885
+    ],
+    "mean_seconds": 5.2576
+  },
+  "B": {
+    "chunks": 160,
+    "trials_seconds": [
+      4.5036,
+      4.6078
+    ],
+    "mean_seconds": 4.5557
+  },
+  "api_cost_usd": 0,
+  "limitations": "Single machine/two non-independent trials per strategy; not cold-start estimates or statistically strong benchmark. No retrieval or Test result used for tuning."
+}

@@ -8,6 +8,6 @@
 - [x] CP3: PDF ingestion, text normalization, two chunking algorithms and error logs; 9 unit tests pass, reproducible JSONL outputs.
 - [x] CP4: Real local 384-d embedding model, pgvector A/B physical index and C filter; top-3 smoke tests, idempotent rerun and tests passed.
 - [x] CP5: 60 frozen dev/test queries, full top-3 traces and five-dimension audit; qualitative labels AI-assisted, learner confirmation recommended.
-- [ ] CP6: Actual experiment log, final comparisons, failure cases, conclusions, instructions, and submission link.
+- [x] CP6: Final report, strategy tradeoffs, failure examples, runtime measurement, README, repository URL and 26-point automated integrity audit. Learner audit confirmation/push/submission remain open.
 
 No test-set retrieval was run during CP1/CP2. Do not change the held-out split based on subsequent scores.

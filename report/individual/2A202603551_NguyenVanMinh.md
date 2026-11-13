@@ -3,7 +3,7 @@
 - Hoc vien: Nguyen Van Minh
 - MSSV: 2A202603551
 - Lop: L3A
-- Status: CP1 through CP5 complete; CP6 final submission review pending.
+- Status: CP1-CP6 technical work complete; learner review and final submission pending.
 
 ## 1. Du lieu va pipeline
 
@@ -74,6 +74,25 @@ AI-assisted drafting and Python scripting were used. Gold evidence is programmat
 - Automated checks: 12/12 tests passed; locked CP2 benchmark validator also passed. No gold dev/test questions were used for CP4 smoke checks; no Hit@1 or Evidence Hit@3 is claimed yet.
 - Recorded evidence: `docs/CP4_VECTOR_STORAGE.md`, `starter/results/cp4_statistics.json`, `cp4_smoke_traces.json`, `cp4_run.log`, `cp4_rerun.log`, `cp4_tests.log`. Embedding cache is local and Git-ignored, but reproducible.
 
-## 7. CP6 handoff
 
-Pending final submission audit: verify README setup from clean environment, repo URL/access, source rights, final report completeness, and links. CP5 metrics are complete and should not be retrospectively tuned on Test.
+## 7. CP6 - Analysis, conclusion and reproducibility
+
+### Comparison and selection
+
+Dev evidence retrieval improved from 9/15 (A) to 12/15 (B and C); on held-out Test, from 2/5 (A) to 4/5 (B/C). Dev Hit@1 was 4/15 for A against 9/15 for B/C; Test Hit@1 was 0/5 against 2/5. Results came from real 384-dimensional embeddings stored persistently in pgvector, with the same questions, model, and corpus across strategies. Scores strictly require the entire gold quote inside one chunk at the correct physical PDF page and document ID. These scores are not generated-answer accuracy.
+
+For **A vs B**, structure-aware chunking (max 650 characters) preserves evidence better in this sample than fixed windows (500 characters with 50 overlap). For example, Q17 asks for the three kinds of program errors. A returns related chunks but cuts the complete gold statement across windows; B retrieves the statement as rank 1 on physical PDF page 35. B has 160 chunks and 69,744 stored characters; A has 170 chunks and 76,930 stored characters including overlap. This comparison varies chunk size and boundary method as a *single combined chunking strategy change*; it does not isolate size from structure individually.
+
+For **B vs C**, paragraph chunks, embedding model and physical vector index are identical; only the retrieval-time `chapter` filter differs for explicitly scoped questions. C passed 6/6 filter checks across two Test questions, while A and B intentionally had no filter (N/A). However, B and C produced identical strict Hit@1 and Hit@3 scores in the current small benchmark. B was preselected using the frozen Dev selection rule (tie on Hit@3, Hit@1 and coherence, then simpler resources), *before* viewing Test. C remains preferable when strict chapter scoping is essential, even without a measured hit gain.
+
+Q20 is a documented difficult case: B/C retrieve fragments about pre- and postconditions but not the entire gold quote in one chunk, so the strict metric counts failure, while AI-assisted grounding analysis rates partial support. This emphasizes a difference between strict exact-quote retrieval and useful multi-chunk evidence.
+
+### Resource use and limitations
+
+The CP3 original extraction took about 0.728 seconds. CP4 first successful B embedding took 3.184 seconds; A used the cache from an interrupted prior attempt. CP6 independently repeated *real CPU embedding forward passes* (two warmed trials per strategy, in ABBA order): A was 5.6267 and 4.8885 seconds, mean **5.2576 seconds**; B was 4.5036 and 4.6078 seconds, mean **4.5557 seconds**. Model initialization took 13.5631 seconds and is excluded from those means, as are database/installation times. C adds no physical embedding storage or CPU pass beyond B. API cost was **USD 0**, excluding local machine/electricity/storage. These small timing samples do not support broad performance claims.
+
+Limitations: single book and 35 content pages, only five held-out Test questions, some PDF font extraction artifacts, strict evidence matching that rejects alternative or split evidence, and AI-assisted coherence/grounding scores that have **not** been independently human-validated. Future work: larger independent benchmark, source-diverse corpora, multi-chunk and paraphrased-evidence assessment, better glyph cleanup and OCR for scanned PDFs, and attention to the embedding model's 256-token limit. Do not tune the already-seen Test then claim it is held out.
+
+### Final audit and AI disclosure
+
+Full source and immutable traces remain at `starter/results/cp5_*`. CP6 resource evidence: `starter/results/cp6_resource_measurement.json`; final artifact integrity/secret-pattern audit: `scripts/final_audit.py` and `starter/results/cp6_submission_audit.json`. Reproduction and completion checklist: `README.md`, `SUBMISSION.md`, and `docs/CP6_FINAL_REVIEW.md`. ChatGPT assisted source review, code generation, benchmark authoring, chunk coherence and grounding assessment, and document drafting. Automated retrieval and metadata checks ran on the local machine; qualitative scores are transparent AI-assisted judgments requiring the student's confirmation if independent manual audit is requested. Repository publication does not prove submission to the instructor.

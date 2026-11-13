@@ -1,0 +1,27 @@
+PASS Corpus >=30 qualifying pages 
+PASS PDF hash unchanged 
+PASS Source permission documented 
+PASS Gold count/split 
+PASS Gold SHA256 unchanged 
+PASS Filters (>=3, >=1 test) 
+PASS Strategy A chunk count 
+PASS Strategy A valid metadata 
+PASS Strategy B chunk count 
+PASS Strategy B valid metadata 
+PASS Real 384-d model and database count 
+PASS dev traces 
+PASS dev full text provenance 
+PASS test traces 
+PASS test full text provenance 
+PASS Pre-test selection immutable Dev hash 
+PASS Selected B (Dev only) 
+PASS Summary 60 queries 
+PASS Manual-coherence audit entries (AI assisted) 
+PASS Grounding 5 test x 3 strategies (AI assisted) 
+PASS Metadata 5 test x top3 x 3 strategies 
+PASS Experiment log A/B/C 
+PASS Individual report and CP docs exist 
+PASS Resource measurement recorded 
+PASS No tracked environment/key/virtualenv/cache files 
+PASS No common API tokens in committed text 
+SUMMARY 26 / 26

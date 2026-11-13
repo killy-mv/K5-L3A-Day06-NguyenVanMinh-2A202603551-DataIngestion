@@ -30,3 +30,5 @@ Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.
 - [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân.
 - [ ] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ.
 - [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.
+
+**CP6 status (2026-11-13):** Final technical files and audit completed. Repository URL is documented in `STUDENT.md` and publicly accessible (HTTP 200), but CP6 changes must still be committed/pushed and the link submitted to instructor. The manual audit checkbox remains open for independent learner confirmation of AI-assisted coherence/grounding labels. Secret/license checkbox also remains open until final student review; `.env` and local model cache are Git-ignored. Details: `docs/CP6_FINAL_REVIEW.md` and `starter/results/cp6_submission_audit.json`.
