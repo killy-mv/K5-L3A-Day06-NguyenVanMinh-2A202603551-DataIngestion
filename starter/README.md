@@ -88,3 +88,18 @@ cd starter
 ```
 
 `src.cp4` indexes 170 fixed chunks as A and 160 paragraph chunks as B in PostgreSQL + pgvector. C reuses B's vectors with optional `chapter` filtering. Local CPU `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions) is used for both documents and queries; no embedding API key needed. Run artifacts and smoke top-3 traces are saved in `results/cp4_*`. See `../docs/CP4_VECTOR_STORAGE.md`. Benchmark dev/test evaluation and manual audit are intentionally deferred to CP5.
+
+## CP5: frozen benchmark (completed)
+
+Run from `starter/`, only on a clean CP5 results folder, in this strict order:
+
+```bash
+.venv/Scripts/python.exe -m src.run --stage dev
+.venv/Scripts/python.exe -m src.cp5_audit
+.venv/Scripts/python.exe -m src.run --stage freeze
+.venv/Scripts/python.exe -m src.run --stage test
+.venv/Scripts/python.exe -m src.cp5_finalize
+.venv/Scripts/python.exe -m unittest discover -s tests -v
+```
+
+The scripts refuse accidental overwrites of frozen benchmark runs. Completed files are under `results/cp5_*`, including full top-3 texts, scores, auditable source page metadata, per-question strict Hit@1 / Evidence Hit@3, and AI-assisted qualitative audits. Strategy B was locked on Dev before any Test queries. Do not describe AI-assisted coherence or grounding assessments as independent human ratings. See `../docs/CP5_EVALUATION.md` and `../artifacts/experiment_log.csv` for actual outcomes.

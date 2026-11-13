@@ -1,19 +1,21 @@
-"""Suggested pipeline entry point; TODO: implement the orchestration."""
+"""Day 06 CLI entry point. Run CP3/4 first; CP5 stages use frozen artifacts."""
+from __future__ import annotations
+import argparse
 
 
 def main() -> None:
-    """TODO:
+    parser = argparse.ArgumentParser(description='Day 06 pipeline checkpoints')
+    parser.add_argument('--stage', choices=['cp3', 'cp4', 'dev', 'freeze', 'test'], required=True)
+    args = parser.parse_args()
+    if args.stage == 'cp3':
+        from .cp3 import main as go
+    elif args.stage == 'cp4':
+        from .cp4 import main as go
+    else:
+        from .cp5 import main_for_stage
+        go = lambda: main_for_stage(args.stage)
+    go()
 
-    1. Load the corpus and benchmark; validate at least 30 content pages.
-    2. Build strategies A (fixed), B (paragraph) and C (B + metadata filter).
-    3. Embed with the same model and store vectors/metadata per strategy.
-    4. Run the same dev/test questions and save full top-3 traces.
-    5. Report retrieval metrics and prepare samples for manual assessment.
 
-    Follow the five dimensions in ../../BENCHMARK.md.
-    """
-    raise NotImplementedError("TODO: implement the Day 06 pipeline")
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

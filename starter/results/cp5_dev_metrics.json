@@ -1,0 +1,54 @@
+{
+  "stage": "CP5_dev",
+  "created_at_utc": "2026-11-13T11:11:11.215410+00:00",
+  "questions": 15,
+  "retrievals": 45,
+  "top_k": 3,
+  "corpus_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "questions_canonical_sha256": "af575c7dada18ce4f417091127bfd0bf4c0c9b5839b588eb001cb55c1fd5d9bf",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "metric_definition": "Strict single-chunk full normalized evidence + matching gold source/page",
+  "metrics": {
+    "A": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 4,
+        "hit3_n": 9,
+        "hit1": 0.2667,
+        "hit3": 0.6,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 6
+        }
+      }
+    },
+    "B": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      }
+    },
+    "C": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      }
+    }
+  },
+  "test_used_to_tune": false
+}

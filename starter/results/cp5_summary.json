@@ -1,0 +1,152 @@
+{
+  "stage": "CP5_complete",
+  "selected_before_test": "B",
+  "selection_lock_path": "starter/results/cp5_dev_selection.json",
+  "selection_trace_sha256": "f851b3f8a628a707842423ca07cff073930329f8f27d8b6e16bbb0b33ce969e1",
+  "corpus_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "question_count": 20,
+  "dev": 15,
+  "test": 5,
+  "retrieval_runs": 60,
+  "top_k": 3,
+  "metrics": {
+    "A": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 4,
+        "hit3_n": 9,
+        "hit1": 0.2667,
+        "hit3": 0.6,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 6
+        }
+      },
+      "test": {
+        "questions": 5,
+        "hit1_n": 0,
+        "hit3_n": 2,
+        "hit1": 0.0,
+        "hit3": 0.4,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      }
+    },
+    "B": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      },
+      "test": {
+        "questions": 5,
+        "hit1_n": 2,
+        "hit3_n": 4,
+        "hit1": 0.4,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 1
+        }
+      }
+    },
+    "C": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      },
+      "test": {
+        "questions": 5,
+        "hit1_n": 2,
+        "hit3_n": 4,
+        "hit1": 0.4,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 1
+        }
+      }
+    }
+  },
+  "coherence_ai_review": {
+    "A": {
+      "sum": 10,
+      "n": 10,
+      "mean_0_2": 1.0
+    },
+    "B": {
+      "sum": 13,
+      "n": 10,
+      "mean_0_2": 1.3
+    },
+    "C": {
+      "sum": 13,
+      "n": 10,
+      "mean_0_2": 1.3
+    }
+  },
+  "metadata_audit": {
+    "A": {
+      "correct": 15,
+      "total": 15,
+      "filter_compliant": 0,
+      "filtered_topk": 0
+    },
+    "B": {
+      "correct": 15,
+      "total": 15,
+      "filter_compliant": 0,
+      "filtered_topk": 0
+    },
+    "C": {
+      "correct": 15,
+      "total": 15,
+      "filter_compliant": 6,
+      "filtered_topk": 6
+    }
+  },
+  "grounding_ai_review": {
+    "A": {
+      "sum": 7,
+      "n": 5,
+      "mean_0_2": 1.4,
+      "score_counts": {
+        "2": 2,
+        "1": 3
+      }
+    },
+    "B": {
+      "sum": 9,
+      "n": 5,
+      "mean_0_2": 1.8,
+      "score_counts": {
+        "2": 4,
+        "1": 1
+      }
+    },
+    "C": {
+      "sum": 9,
+      "n": 5,
+      "mean_0_2": 1.8,
+      "score_counts": {
+        "2": 4,
+        "1": 1
+      }
+    }
+  },
+  "audit_disclosure": "Coherence and grounding rated by AI-assisted close reading; not independently verified by a human.",
+  "strict_metric_limitation": "Exact complete gold evidence in one chunk on gold source+page; semantic equivalence or answers assembled across chunks are not credited.",
+  "test_caution": "Five questions is too small to assert a general best strategy."
+}

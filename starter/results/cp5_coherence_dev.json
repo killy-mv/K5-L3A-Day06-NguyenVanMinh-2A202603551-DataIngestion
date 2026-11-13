@@ -1,0 +1,329 @@
+{
+  "A": {
+    "mean": 1.0,
+    "count": 10,
+    "sample": [
+      {
+        "pdf_page": 23,
+        "chunk_id": "fixed-5f36eb325731d31548b1",
+        "chunk_index": 2,
+        "chunk_chars": 500,
+        "chunk_sha256": "aad09ad4d0175bae85b154a086c336d8b5fd90d1c8bef51fc53d1d31d7107cbf",
+        "score_0_2": 1,
+        "rationale": "Begins mid-word; contains a useful definition, but trails off mid-word.",
+        "text_excerpt": "pter is called,\n“The way of the program”.\n\nOn one level, you will be learning to program, a useful skill by itself. On another level, you\nwill use programming as a means to an end. As we go along, that end will become clearer.\n\n1.1 What is a program?\n\nAprogramis a sequence of instructions that specifies how to perform "
+      },
+      {
+        "pdf_page": 26,
+        "chunk_id": "fixed-04f78674b909865ce9d2",
+        "chunk_index": 2,
+        "chunk_chars": 500,
+        "chunk_sha256": "6149bd1d88466ef1b0fc787caf99b3f69f91b0bdce3081c38989ed5137a6554f",
+        "score_0_2": 1,
+        "rationale": "Connects numeric examples to language differences, but crosses a section boundary.",
+        "text_excerpt": ">>> type('42.0')\n<class'str'>\nThey’re strings.\n\nWhen you type a large integer, you might be tempted to use commas between groups of\ndigits, as in1,000,000. This is not a legalintegerin Python, but it is legal:\n>>> 1,000,000\n(1, 0, 0)\nThat’s not what we expected at all! Python interprets1,000,000as a comma-separated\nseq"
+      },
+      {
+        "pdf_page": 31,
+        "chunk_id": "fixed-09a9fafc9a9967378d84",
+        "chunk_index": 1,
+        "chunk_chars": 500,
+        "chunk_sha256": "9243267b0616a3e311c7c0ce1383564a444691abbf5569794dc0209974e11f22",
+        "score_0_2": 1,
+        "rationale": "Begins in the middle of a sentence and changes from assignments to names.",
+        "text_excerpt": "g to a new variable named\nmessage; the second gives the integer17ton; the third assigns the (approximate) value of\nπtopi.\nA common way to represent variables on paper is to write the name with an arrow pointing\nto its value. This kind of figure is called astate diagrambecause it shows what state each\nof the variables i"
+      },
+      {
+        "pdf_page": 34,
+        "chunk_id": "fixed-6740581ce20674ffc0a8",
+        "chunk_index": 3,
+        "chunk_chars": 500,
+        "chunk_sha256": "d515fda00323c9adb1da3952ff389a92255f953545beb68537c9a5a425ea9123",
+        "score_0_2": 1,
+        "rationale": "Starts in the middle of a definition; coherent string examples follow.",
+        "text_excerpt": "he+operator performsstring concatenation, which means it joins the strings by linking\nthem end-to-end. For example:\n>>> first ='throat'\n>>> second ='warbler'\n>>> first + second\nthroatwarbler\nThe*operator also works on strings; it performs repetition. For example,'Spam'*3is\n'SpamSpamSpam'. If one of the values is a stri"
+      },
+      {
+        "pdf_page": 39,
+        "chunk_id": "fixed-1dca9be816e7870cffbb",
+        "chunk_index": 1,
+        "chunk_chars": 500,
+        "chunk_sha256": "7b478bb98acacced9641cd57eff9d310d3797250c481ba5d140f2eca1609d2ee",
+        "score_0_2": 1,
+        "rationale": "Opens mid-explanation and ends near a cut conversion example.",
+        "text_excerpt": "The result, for this function, is the type of the argument.\nIt is common to say that a function “takes” an argument and “returns” a result. The result\nis also called thereturn value.\nPython provides functions that convert values from one type to another. Theintfunction\ntakes any value and converts it to an integer, if "
+      },
+      {
+        "pdf_page": 42,
+        "chunk_id": "fixed-df0ed87c088e41416bd3",
+        "chunk_index": 2,
+        "chunk_chars": 500,
+        "chunk_sha256": "2b69a2ccf912e78cc200e2cc20309dfc51f55acfc2fe534094d2835839aedecf",
+        "score_0_2": 1,
+        "rationale": "Opens mid-quoted output, but includes a complete function code example.",
+        "text_excerpt": "mberjack, and I'm okay.\nI sleep all night and I work all day.\nBut that’s not really how the song goes.\n\n3.5 Definitions and uses\n\nPulling together the code fragments from the previous section, the whole program looks\nlike this:\ndef print_lyrics():\n      print(\"I'm a lumberjack, and I'm okay.\")\n      print(\"I sleep all "
+      },
+      {
+        "pdf_page": 46,
+        "chunk_id": "fixed-c45ded6cc889e1321e2c",
+        "chunk_index": 2,
+        "chunk_chars": 500,
+        "chunk_sha256": "9f8bc6bd30b8bbd15cb7c3d1459051809e14768059cb4b43561a7c219297c2d9",
+        "score_0_2": 1,
+        "rationale": "Contains good examples but begins mid-expression and ends mid-definition.",
+        "text_excerpt": " (math.sqrt(5) + 1) / 2\nWhen you call a function in interactive mode, Python displays the result:\n>>> math.sqrt(5)\n2.2360679774997898\nBut in a script, if you call a fruitful function all by itself, the return value is lost forever!\nmath.sqrt(5)\nThis script computes the square root of 5, but since it doesn’t store or di"
+      },
+      {
+        "pdf_page": 51,
+        "chunk_id": "fixed-8309f9ff97022b589b44",
+        "chunk_index": 1,
+        "chunk_chars": 500,
+        "chunk_sha256": "59475e827949b23951532270383b2e74340dbb75dd10706173bc5009e97e963c",
+        "score_0_2": 1,
+        "rationale": "Combines chapter setup and turtle introduction with a partial final sentence.",
+        "text_excerpt": "ready installed Python on your computer, you should be able to run the\nexamples. Otherwise, now is a good time to install. I have posted instructions athttp:\n//tinyurl.com/thinkpython2e.\n\nCode examples from this chapter are available fromhttps://thinkpython.com/code/\npolygon.py.\n\n4.1 The turtle module\n\nTo check whether"
+      },
+      {
+        "pdf_page": 55,
+        "chunk_id": "fixed-607a1379b131abc74da8",
+        "chunk_index": 3,
+        "chunk_chars": 500,
+        "chunk_sha256": "df92bf52a1c394a74d394aa13dd50f2c10f75db2ea70d4b3cb9dcae30e02f06c",
+        "score_0_2": 1,
+        "rationale": "Discusses polygon circle approximation but cuts at a line/window boundary.",
+        "text_excerpt": "tements are\nusually at the beginning of the script.\n\nnis the number of line segments in our approximation of a circle, solengthis the length\nof each segment. Thus,polygondraws a 50-sided polygon that approximates a circle with\nradiusr.\n\nOne limitation of this solution is thatnis a constant, which means that for very bi"
+      },
+      {
+        "pdf_page": 58,
+        "chunk_id": "fixed-74aab09d32856f144ad7",
+        "chunk_index": 3,
+        "chunk_chars": 500,
+        "chunk_sha256": "b59eb4a02ecb7b4d02723e39a364fff9de3a7367cb1189813ece5441f71f82be",
+        "score_0_2": 1,
+        "rationale": "Begins mid-word; combines debugging notes with a glossary.",
+        "text_excerpt": "sibility of the caller. If the caller violates a (properly docu-\nmented!) precondition and the function doesn’t work correctly, the bug is in the caller, not\nthe function.\n\nIf the preconditions are satisfied and the postconditions are not, the bug is in the function.\nIf your pre- and postconditions are clear, they can "
+      }
+    ]
+  },
+  "B": {
+    "mean": 1.3,
+    "count": 10,
+    "sample": [
+      {
+        "pdf_page": 23,
+        "chunk_id": "paragraph-ffbc2eae5676dc4386dc",
+        "chunk_index": 2,
+        "chunk_chars": 592,
+        "chunk_sha256": "41500b82dd479c9af1b4b9123074aee480558a2c5bf5bc11c6992527942d1e1d",
+        "score_0_2": 2,
+        "rationale": "Starts at the section heading and keeps the program definition with its explanation.",
+        "text_excerpt": "1.1 What is a program?\n\nAprogramis a sequence of instructions that specifies how to perform a computation. The\ncomputation might be something mathematical, such as solving a system of equations or\nfinding the roots of a polynomial, but it can also be a symbolic computation, such as search-\ning and replacing text in a d"
+      },
+      {
+        "pdf_page": 26,
+        "chunk_id": "paragraph-afcd23c875668af91b9c",
+        "chunk_index": 2,
+        "chunk_chars": 342,
+        "chunk_sha256": "9ed13ca31a083dbd216bd1b2cfea7f3b2c907fd44c10faa1104d357050edc073",
+        "score_0_2": 2,
+        "rationale": "Complete self-contained example about comma-separated integers.",
+        "text_excerpt": "When you type a large integer, you might be tempted to use commas between groups of\ndigits, as in1,000,000. This is not a legalintegerin Python, but it is legal:\n>>> 1,000,000\n(1, 0, 0)\nThat’s not what we expected at all! Python interprets1,000,000as a comma-separated\nsequence of integers. We’ll learn more about this k"
+      },
+      {
+        "pdf_page": 31,
+        "chunk_id": "paragraph-299e5a4a057524d47832",
+        "chunk_index": 2,
+        "chunk_chars": 52,
+        "chunk_sha256": "bbe97f817550f7b95b426041feb08c18e09f2caa9ae3ca99fb21ebbc5fe40492",
+        "score_0_2": 0,
+        "rationale": "Isolated figure-reference sentence with no useful explanation or context.",
+        "text_excerpt": "Figure 2.1 shows the result\nof the previous example."
+      },
+      {
+        "pdf_page": 34,
+        "chunk_id": "paragraph-3a983b172caa41487bf4",
+        "chunk_index": 2,
+        "chunk_chars": 600,
+        "chunk_sha256": "0a17a04bd1b4dda0e2458de04fb02114b834d3c94dfd2917491fb35b8f82e4f5",
+        "score_0_2": 2,
+        "rationale": "Starts at string-operations heading and preserves related examples.",
+        "text_excerpt": "2.6 String operations\n\nIn general, you can’t perform mathematical operations on strings, even if the strings look\nlike numbers, so the following are illegal:\n'chinese'-'food' 'eggs'/'easy' 'third'*'a charm'\nBut there are two exceptions,+and*.\n\nThe+operator performsstring concatenation, which means it joins the strings "
+      },
+      {
+        "pdf_page": 39,
+        "chunk_id": "paragraph-eb5048487c29c147626c",
+        "chunk_index": 1,
+        "chunk_chars": 453,
+        "chunk_sha256": "a0d7ab5b5b3fe1ba183b73dc352fa1599e555facf3135a354c569f580c4d8887",
+        "score_0_2": 2,
+        "rationale": "Complete function-call heading and detailed introduction with examples.",
+        "text_excerpt": "3.1 Function calls\n\nWe have already seen one example of afunction call:\n>>> type(42)\n<class'int'>\nThe name of the function istype. The expression in parentheses is called theargumentof\nthe function. The result, for this function, is the type of the argument.\nIt is common to say that a function “takes” an argument and “"
+      },
+      {
+        "pdf_page": 42,
+        "chunk_id": "paragraph-ba1757daa5ce54cd23f0",
+        "chunk_index": 2,
+        "chunk_chars": 148,
+        "chunk_sha256": "f89ad3893d3f58e99af5475fa981c93f2a53e4be6bda4667e93bc2de7c804a34",
+        "score_0_2": 0,
+        "rationale": "Short tail of song output; detached from the code that generated it.",
+        "text_excerpt": "I sleep all night and I work all day.\nI'm a lumberjack, and I'm okay.\nI sleep all night and I work all day.\nBut that’s not really how the song goes."
+      },
+      {
+        "pdf_page": 46,
+        "chunk_id": "paragraph-dbe1c1f4288621bafca7",
+        "chunk_index": 2,
+        "chunk_chars": 564,
+        "chunk_sha256": "f1d2b36c9149aac42baa2d53549882f2755f9197f833a98ec037d21ccbccbd5b",
+        "score_0_2": 2,
+        "rationale": "Explains fruitful functions with complete use examples.",
+        "text_excerpt": "When you call a fruitful function, you almost always want to do something with the result;\nfor example, you might assign it to a variable or use it as part of an expression:\nx = math.cos(radians)\ngolden = (math.sqrt(5) + 1) / 2\nWhen you call a function in interactive mode, Python displays the result:\n>>> math.sqrt(5)\n2"
+      },
+      {
+        "pdf_page": 51,
+        "chunk_id": "paragraph-2a96bdc3d32f9d0dd1a4",
+        "chunk_index": 1,
+        "chunk_chars": 91,
+        "chunk_sha256": "2da7c462221e6649fed473eb6c5b18571a9c1b2cde9dee3f2676014e32eeb324",
+        "score_0_2": 0,
+        "rationale": "Only a link to external source code with no useful standalone explanation.",
+        "text_excerpt": "Code examples from this chapter are available fromhttps://thinkpython.com/code/\npolygon.py."
+      },
+      {
+        "pdf_page": 55,
+        "chunk_id": "paragraph-9a2b8afdd3cda9b01b94",
+        "chunk_index": 3,
+        "chunk_chars": 515,
+        "chunk_sha256": "a55bf5c8099a149a064ac4a0095fcbfff1e129f68b255fcb784773b1d597ce89",
+        "score_0_2": 2,
+        "rationale": "Section heading, complete circle function and explanation are grouped.",
+        "text_excerpt": "4.6 Interface design\n\nThe next step is to writecircle, which takes a radius,r, as a parameter. Here is a simple\nsolution that usespolygonto draw a 50-sided polygon:\nimport math\n\ndef circle(t, r):\n      circumference = 2 * math.pi * r\n      n = 50\n      length = circumference / n\n      polygon(t, n, length)\nThe first li"
+      },
+      {
+        "pdf_page": 58,
+        "chunk_id": "paragraph-45f2321aac4938fc8b30",
+        "chunk_index": 3,
+        "chunk_chars": 167,
+        "chunk_sha256": "9a2cd7dbee31811d37d45d334c004f104cc5442422a30f419a1bb78587cdf905",
+        "score_0_2": 1,
+        "rationale": "Short but meaningful standalone postcondition/debugging statement.",
+        "text_excerpt": "If the preconditions are satisfied and the postconditions are not, the bug is in the function.\nIf your pre- and postconditions are clear, they can help with debugging."
+      }
+    ]
+  },
+  "C": {
+    "mean": 1.3,
+    "count": 10,
+    "sample": [
+      {
+        "pdf_page": 23,
+        "chunk_id": "paragraph-ffbc2eae5676dc4386dc",
+        "chunk_index": 2,
+        "chunk_chars": 592,
+        "chunk_sha256": "41500b82dd479c9af1b4b9123074aee480558a2c5bf5bc11c6992527942d1e1d",
+        "score_0_2": 2,
+        "rationale": "Starts at the section heading and keeps the program definition with its explanation.",
+        "text_excerpt": "1.1 What is a program?\n\nAprogramis a sequence of instructions that specifies how to perform a computation. The\ncomputation might be something mathematical, such as solving a system of equations or\nfinding the roots of a polynomial, but it can also be a symbolic computation, such as search-\ning and replacing text in a d"
+      },
+      {
+        "pdf_page": 26,
+        "chunk_id": "paragraph-afcd23c875668af91b9c",
+        "chunk_index": 2,
+        "chunk_chars": 342,
+        "chunk_sha256": "9ed13ca31a083dbd216bd1b2cfea7f3b2c907fd44c10faa1104d357050edc073",
+        "score_0_2": 2,
+        "rationale": "Complete self-contained example about comma-separated integers.",
+        "text_excerpt": "When you type a large integer, you might be tempted to use commas between groups of\ndigits, as in1,000,000. This is not a legalintegerin Python, but it is legal:\n>>> 1,000,000\n(1, 0, 0)\nThat’s not what we expected at all! Python interprets1,000,000as a comma-separated\nsequence of integers. We’ll learn more about this k"
+      },
+      {
+        "pdf_page": 31,
+        "chunk_id": "paragraph-299e5a4a057524d47832",
+        "chunk_index": 2,
+        "chunk_chars": 52,
+        "chunk_sha256": "bbe97f817550f7b95b426041feb08c18e09f2caa9ae3ca99fb21ebbc5fe40492",
+        "score_0_2": 0,
+        "rationale": "Isolated figure-reference sentence with no useful explanation or context.",
+        "text_excerpt": "Figure 2.1 shows the result\nof the previous example."
+      },
+      {
+        "pdf_page": 34,
+        "chunk_id": "paragraph-3a983b172caa41487bf4",
+        "chunk_index": 2,
+        "chunk_chars": 600,
+        "chunk_sha256": "0a17a04bd1b4dda0e2458de04fb02114b834d3c94dfd2917491fb35b8f82e4f5",
+        "score_0_2": 2,
+        "rationale": "Starts at string-operations heading and preserves related examples.",
+        "text_excerpt": "2.6 String operations\n\nIn general, you can’t perform mathematical operations on strings, even if the strings look\nlike numbers, so the following are illegal:\n'chinese'-'food' 'eggs'/'easy' 'third'*'a charm'\nBut there are two exceptions,+and*.\n\nThe+operator performsstring concatenation, which means it joins the strings "
+      },
+      {
+        "pdf_page": 39,
+        "chunk_id": "paragraph-eb5048487c29c147626c",
+        "chunk_index": 1,
+        "chunk_chars": 453,
+        "chunk_sha256": "a0d7ab5b5b3fe1ba183b73dc352fa1599e555facf3135a354c569f580c4d8887",
+        "score_0_2": 2,
+        "rationale": "Complete function-call heading and detailed introduction with examples.",
+        "text_excerpt": "3.1 Function calls\n\nWe have already seen one example of afunction call:\n>>> type(42)\n<class'int'>\nThe name of the function istype. The expression in parentheses is called theargumentof\nthe function. The result, for this function, is the type of the argument.\nIt is common to say that a function “takes” an argument and “"
+      },
+      {
+        "pdf_page": 42,
+        "chunk_id": "paragraph-ba1757daa5ce54cd23f0",
+        "chunk_index": 2,
+        "chunk_chars": 148,
+        "chunk_sha256": "f89ad3893d3f58e99af5475fa981c93f2a53e4be6bda4667e93bc2de7c804a34",
+        "score_0_2": 0,
+        "rationale": "Short tail of song output; detached from the code that generated it.",
+        "text_excerpt": "I sleep all night and I work all day.\nI'm a lumberjack, and I'm okay.\nI sleep all night and I work all day.\nBut that’s not really how the song goes."
+      },
+      {
+        "pdf_page": 46,
+        "chunk_id": "paragraph-dbe1c1f4288621bafca7",
+        "chunk_index": 2,
+        "chunk_chars": 564,
+        "chunk_sha256": "f1d2b36c9149aac42baa2d53549882f2755f9197f833a98ec037d21ccbccbd5b",
+        "score_0_2": 2,
+        "rationale": "Explains fruitful functions with complete use examples.",
+        "text_excerpt": "When you call a fruitful function, you almost always want to do something with the result;\nfor example, you might assign it to a variable or use it as part of an expression:\nx = math.cos(radians)\ngolden = (math.sqrt(5) + 1) / 2\nWhen you call a function in interactive mode, Python displays the result:\n>>> math.sqrt(5)\n2"
+      },
+      {
+        "pdf_page": 51,
+        "chunk_id": "paragraph-2a96bdc3d32f9d0dd1a4",
+        "chunk_index": 1,
+        "chunk_chars": 91,
+        "chunk_sha256": "2da7c462221e6649fed473eb6c5b18571a9c1b2cde9dee3f2676014e32eeb324",
+        "score_0_2": 0,
+        "rationale": "Only a link to external source code with no useful standalone explanation.",
+        "text_excerpt": "Code examples from this chapter are available fromhttps://thinkpython.com/code/\npolygon.py."
+      },
+      {
+        "pdf_page": 55,
+        "chunk_id": "paragraph-9a2b8afdd3cda9b01b94",
+        "chunk_index": 3,
+        "chunk_chars": 515,
+        "chunk_sha256": "a55bf5c8099a149a064ac4a0095fcbfff1e129f68b255fcb784773b1d597ce89",
+        "score_0_2": 2,
+        "rationale": "Section heading, complete circle function and explanation are grouped.",
+        "text_excerpt": "4.6 Interface design\n\nThe next step is to writecircle, which takes a radius,r, as a parameter. Here is a simple\nsolution that usespolygonto draw a 50-sided polygon:\nimport math\n\ndef circle(t, r):\n      circumference = 2 * math.pi * r\n      n = 50\n      length = circumference / n\n      polygon(t, n, length)\nThe first li"
+      },
+      {
+        "pdf_page": 58,
+        "chunk_id": "paragraph-45f2321aac4938fc8b30",
+        "chunk_index": 3,
+        "chunk_chars": 167,
+        "chunk_sha256": "9a2cd7dbee31811d37d45d334c004f104cc5442422a30f419a1bb78587cdf905",
+        "score_0_2": 1,
+        "rationale": "Short but meaningful standalone postcondition/debugging statement.",
+        "text_excerpt": "If the preconditions are satisfied and the postconditions are not, the bug is in the function.\nIf your pre- and postconditions are clear, they can help with debugging."
+      }
+    ],
+    "same_chunks_as": "B",
+    "note": "C uses identical B chunks; coherence cannot differ."
+  },
+  "protocol": {
+    "position_selection": "One centered-by-index chunk from each of 10 predeclared physical PDF pages: [23, 26, 31, 34, 39, 42, 46, 51, 55, 58]",
+    "rubric": "0=fragment/lacks standalone meaning; 1=partially coherent with cuts or weak context; 2=coherent with sufficient context.",
+    "review_provenance": "AI-assisted close reading of actual chunk excerpts; not claimed as independent human reviewer; learner validation recommended.",
+    "created_before_test": "yes",
+    "strategy_blind": "no (A/B are visibly different)"
+  }
+}

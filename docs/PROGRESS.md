@@ -7,7 +7,7 @@
 - [x] CP2: Benchmark validator passing; preliminary individual report drafted.
 - [x] CP3: PDF ingestion, text normalization, two chunking algorithms and error logs; 9 unit tests pass, reproducible JSONL outputs.
 - [x] CP4: Real local 384-d embedding model, pgvector A/B physical index and C filter; top-3 smoke tests, idempotent rerun and tests passed.
-- [ ] CP5: Top-3 traces, dev/test retrieval measures, coherence / metadata / grounding human audits.
+- [x] CP5: 60 frozen dev/test queries, full top-3 traces and five-dimension audit; qualitative labels AI-assisted, learner confirmation recommended.
 - [ ] CP6: Actual experiment log, final comparisons, failure cases, conclusions, instructions, and submission link.
 
 No test-set retrieval was run during CP1/CP2. Do not change the held-out split based on subsequent scores.

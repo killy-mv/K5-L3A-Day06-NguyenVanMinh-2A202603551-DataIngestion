@@ -1,0 +1,55 @@
+{
+  "frozen_at_utc": "2026-11-13T11:12:25.157610+00:00",
+  "selected_strategy": "B",
+  "selection_rationale": "Dev hit3 and hit1 tie resolved with pre-test coherence / chunk resource tie-break.",
+  "dev_metrics": {
+    "A": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 4,
+        "hit3_n": 9,
+        "hit1": 0.2667,
+        "hit3": 0.6,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 6
+        }
+      }
+    },
+    "B": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      }
+    },
+    "C": {
+      "dev": {
+        "questions": 15,
+        "hit1_n": 9,
+        "hit3_n": 12,
+        "hit1": 0.6,
+        "hit3": 0.8,
+        "failure_types": {
+          "right_page_but_missing_complete_evidence": 2,
+          "wrong_page_or_source": 1
+        }
+      }
+    }
+  },
+  "candidate_order": [
+    "B",
+    "C",
+    "A"
+  ],
+  "selection_rule": "Select on dev only: maximize Evidence Hit@3, then Hit@1, coherence, and resource use. Evaluate test after freezing selection.",
+  "dev_traces_sha256": "f851b3f8a628a707842423ca07cff073930329f8f27d8b6e16bbb0b33ce969e1",
+  "corpus_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "questions_canonical_sha256": "af575c7dada18ce4f417091127bfd0bf4c0c9b5839b588eb001cb55c1fd5d9bf",
+  "test_seen_before_freeze": false
+}

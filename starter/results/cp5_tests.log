@@ -1,0 +1,23 @@
+test_empty_pdf_page_warns (test_cp3.TextTests.test_empty_pdf_page_warns) ... ok
+test_fixed_invalid_parameters (test_cp3.TextTests.test_fixed_invalid_parameters) ... ok
+test_fixed_windows_reconstruct (test_cp3.TextTests.test_fixed_windows_reconstruct) ... ok
+test_manifest_integrity_and_pages (test_cp3.TextTests.test_manifest_integrity_and_pages) ... ok
+test_metadata_isolation (test_cp3.TextTests.test_metadata_isolation) ... ok
+test_normalization (test_cp3.TextTests.test_normalization) ... ok
+test_out_of_bounds_and_missing_file (test_cp3.TextTests.test_out_of_bounds_and_missing_file) ... ok
+test_paragraph_chunking_keeps_content (test_cp3.TextTests.test_paragraph_chunking_keeps_content) ... ok
+test_paragraph_splits_long_unbroken_words (test_cp3.TextTests.test_paragraph_splits_long_unbroken_words) ... ok
+test_invalid_vectors_and_filters (test_cp4.CP4UnitTests.test_invalid_vectors_and_filters) ... ok
+test_live_store_and_filter (test_cp4.CP4UnitTests.test_live_store_and_filter) ... ok
+test_real_model_encoding (test_cp4.CP4UnitTests.test_real_model_encoding) ... Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2718.52it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok
+test_benchmark_lock_and_selection (test_cp5.EvaluationTests.test_benchmark_lock_and_selection) ... ok
+test_evidence_requires_same_chunk_and_provenance (test_cp5.EvaluationTests.test_evidence_requires_same_chunk_and_provenance) ... ok
+test_late_hit_and_summary (test_cp5.EvaluationTests.test_late_hit_and_summary) ... ok
+test_trace_counts_and_filter_compliance (test_cp5.EvaluationTests.test_trace_counts_and_filter_compliance) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 17.107s
+
+OK

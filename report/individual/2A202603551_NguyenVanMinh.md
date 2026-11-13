@@ -3,7 +3,7 @@
 - Hoc vien: Nguyen Van Minh
 - MSSV: 2A202603551
 - Lop: L3A
-- Status: CP1 through CP4 complete; CP5-CP6 pending. This document will be updated as experiments are actually run.
+- Status: CP1 through CP5 complete; CP6 final submission review pending.
 
 ## 1. Du lieu va pipeline
 
@@ -25,26 +25,33 @@
 - Pre-test selection policy: maximize dev Evidence Hit@3, then Hit@1, then coherence and resource use. This policy was recorded before any retrieval benchmark.
 - Validation: `scripts/validate_benchmark.py` passed exact page evidence, immutable hashes, split and filter rules. **This is not a retrieval score.**
 
-## 3. Ket qua retrieval (pending CP5; CP4 storage measured separately)
+## 3. CP5 - Measured benchmark and five-dimension audit
 
-| Strategy | Split | Hit@1 (n/N) | Evidence Hit@3 (n/N) | Chunk count | Time | Cost |
-|---|---|---|---|---|---|---|
-| A | dev/test | Pending | Pending | Pending | Pending | Pending |
-| B | dev/test | Pending | Pending | Pending | Pending | Pending |
-| C | dev/test | Pending | Pending | Pending | Pending | Pending |
+Selection order: 15 Dev questions (45 searches), then frozen strategy B, then 5 held-out Test questions (15 searches). No Test tuning. Strict scoring requires complete gold evidence in one chunk with matching document ID and physical PDF page.
 
-| Strategy | Coherence mean /2 (n) | Metadata correct (n/N) | Filter compliance | Grounding 0/1/2 counts, mean /2 |
-|---|---|---|---|---|
-| A | Pending | Pending | Pending | Pending |
-| B | Pending | Pending | Pending | Pending |
-| C | Pending | Pending | Pending | Pending |
+| Strategy | Dev Hit@1 | Dev Evidence Hit@3 | Test Hit@1 | Test Evidence Hit@3 |
+|---|---:|---:|---:|---:|
+| A | 4/15 | 9/15 | 0/5 | 2/5 |
+| B | 9/15 | 12/15 | 2/5 | 4/5 |
+| C | 9/15 | 12/15 | 2/5 | 4/5 |
 
-- Trace path and human audit labels: Pending CP5.
-- Data strategy analysis, failure case examples, limitations and conclusion: Pending actual experiments.
+| Strategy | Coherence (10 chunks, 0-2) | Metadata correct (5 Test x Top3) | Filter compliance | Grounding (5 Test, 0-2) |
+|---|---:|---:|---:|---:|
+| A | 10/20 (1.0/2) | 15/15 | N/A (no filter) | 7/10 (1.4/2) |
+| B | 13/20 (1.3/2) | 15/15 | N/A (no filter) | 9/10 (1.8/2) |
+| C | 13/20 (1.3/2) | 15/15 | 6/6 | 9/10 (1.8/2) |
+
+- Selected B on Dev: B/C tied at Evidence Hit@3=12/15 and Hit@1=9/15; identical B/C chunk coherence=1.3/2; B requires no optional filter complexity. Pre-Test selection recorded in `starter/results/cp5_dev_selection.json`.
+- Metadata correctness is cross-checked against the original manifest for all retrieved test chunks; Chapter 3/4 filtering in C is independently checked for the two filtered Test questions. A/B filter compliance is not applicable, not a failure.
+- Strict failure examples: Q17 A retrieves the right area but splits the three-error-type sentence across chunks; B/C retrieve full evidence. Q20 B/C spread precondition/postcondition responsibilities across separate chunks and thus fail strict whole-quote matching despite partial useful evidence. Source excerpts and full Top3 traces are saved, not inferred from model scores.
+- Grounding and coherence labels are **AI-assisted qualitative readings of actual chunk text**, with source IDs, quotes and rationale, not independently human-verified. Learner should review/confirm before claiming a human audit. Grounding evaluates evidence sufficiency, not generated answers.
+- Strategy cost comparison: A=170 physical chunks / 76,930 chunk chars; B=160 / 69,744; C reuses B and introduces only retrieval-time chapter filtering. All embeddings are from the same local 384-d model (zero API charges, excluding local CPU/electricity). Cold and warm-cache time measurements must not be conflated. Timing details are in `cp3_statistics.json` and `cp4_run.log`.
+- Caveats: 5 Test questions, single textbook, some malformed PDF glyphs; exact-single-chunk matching is deliberately conservative. No broadly generalizable superiority claimed.
+- CP5 reproducibility/report evidence: `docs/CP5_EVALUATION.md`, `starter/results/cp5_summary.json`, `cp5_dev_traces.jsonl`, `cp5_test_traces.jsonl`, `cp5_dev_selection.json`, `cp5_coherence_dev.json`, `cp5_metadata_audit.csv`, `cp5_grounding_audit.csv`, `cp5_failure_cases.json`, and `artifacts/experiment_log.csv`.
 
 ## 4. AI assistance and verification
 
-AI-assisted drafting and Python scripting were used. Gold evidence is programmatically checked against source PDF pages. Manual review of retrieved evidence will be recorded in CP5. No retrieval or human audit metrics are claimed yet.
+AI-assisted drafting and Python scripting were used. Gold evidence is programmatically checked against source PDF pages. CP5 retrieval metrics are measured from saved top-3 traces; coherence/grounding scores are AI-assisted close-reading annotations, clearly disclosed and awaiting independent learner verification.
 
 ## 5. CP3 - Ingestion and chunking execution (completed)
 
@@ -66,3 +73,7 @@ AI-assisted drafting and Python scripting were used. Gold evidence is programmat
 - Smoke test: 2 deliberately non-benchmark prompts x A/B/C, 6 top-3 results. Filtered strategy C returned Chapter 4 matches only, and unfiltered B/C rankings were identical. Query traces with scores and text previews saved under `starter/results/cp4_smoke_traces.json`.
 - Automated checks: 12/12 tests passed; locked CP2 benchmark validator also passed. No gold dev/test questions were used for CP4 smoke checks; no Hit@1 or Evidence Hit@3 is claimed yet.
 - Recorded evidence: `docs/CP4_VECTOR_STORAGE.md`, `starter/results/cp4_statistics.json`, `cp4_smoke_traces.json`, `cp4_run.log`, `cp4_rerun.log`, `cp4_tests.log`. Embedding cache is local and Git-ignored, but reproducible.
+
+## 7. CP6 handoff
+
+Pending final submission audit: verify README setup from clean environment, repo URL/access, source rights, final report completeness, and links. CP5 metrics are complete and should not be retrospectively tuned on Test.
