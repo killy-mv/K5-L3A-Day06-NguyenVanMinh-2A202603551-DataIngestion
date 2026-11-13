@@ -45,3 +45,14 @@
 ## 4. AI assistance and verification
 
 AI-assisted drafting and Python scripting were used. Gold evidence is programmatically checked against source PDF pages. Manual review of retrieved evidence will be recorded in CP5. No retrieval or human audit metrics are claimed yet.
+
+## 5. CP3 - Ingestion and chunking execution (completed)
+
+- Implemented `starter/src/ingestion.py`, `starter/src/chunking.py` and runnable `starter/src/cp3.py`. Each PDF physical page retains source, document ID, printed/physical page mapping, page ID, and reliable `chapter` for later filtering.
+- Layout-mode pypdf extraction; NFKC text normalization; preserved line/paragraph boundaries and no speculative correction of malformed PDF glyphs. The original corpus hash is checked against the frozen manifest. Recorded diagnostics for three short, CP1-excluded pages (38, 50, 60); selected pages extracted successfully.
+- Strategy A: fixed-size 500 characters with 50 overlap, 170 chunks, 76,930 total chunk characters, mean 452.53 chars.
+- Strategy B: paragraph/heading-aware 650-char maximum, 160 chunks, 69,744 total chunk characters, mean 435.90 chars. C reuses B chunks identically and will apply only retrieval-time chapter filter.
+- First execution: 0.728 s text extraction, 0.001 s A chunking, 0.001 s B chunking, 0.737 s total (timings are environment-dependent). Database ingestion/embedding time not measured yet.
+- Artifacts: `starter/results/cp3_chunks_A_fixed.jsonl`, `cp3_chunks_B_paragraph.jsonl`, `cp3_page_audit.jsonl`, `cp3_diagnostics.jsonl`, `cp3_statistics.json`, `cp3_run.log`.
+- Verification: 9 automated unit tests pass (`starter/tests/test_cp3.py`), two consecutive JSONL builds have matching SHA256, and every chunk has valid page, source and chapter metadata. Full instructions/limitations: `docs/CP3_INGESTION.md`.
+- Limitation: fixed windows may cut mid-sentence; paragraph chunks may be very short at section boundaries. This is not yet a coherence or evidence-retrieval score; leave all CP5 manual metrics unfilled.

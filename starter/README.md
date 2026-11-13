@@ -63,3 +63,16 @@ docker compose -p day6_student_starter stop
 5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
 
 Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.
+
+## CP3: ingestion + two chunking methods (implemented)
+
+With the CP1 PDF and manifest at repository root, run from `starter/`:
+
+```bash
+.venv/Scripts/python.exe -m src.cp3
+.venv/Scripts/python.exe -m unittest discover -s tests -v
+```
+
+This stage validates the corpus SHA256; ingests 35 PDF pages; builds fixed-size strategy A (500 chars, 50 overlap) and paragraph-aware strategy B (max 650 chars); preserves `document_id`, `source`, physical PDF `page`, and filterable `chapter` metadata. It writes real JSONL chunk exports, audit diagnostics, and statistics to `starter/results/`. Strategy C will reuse B chunks at retrieval time with metadata filtering. See `../docs/CP3_INGESTION.md` and `results/cp3_statistics.json`.
+
+**Important:** The provided `python -m src.run` full-pipeline entry remains TODO until CP4/CP5. Running CP3 does not create embeddings or a vector index.
