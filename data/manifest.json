@@ -1,0 +1,320 @@
+{
+  "corpus_id": "thinkpython2_chapters_1_4",
+  "source_id": "thinkpython2_pdf",
+  "title": "Think Python: How to Think Like a Computer Scientist, 2nd Edition",
+  "author": "Allen B. Downey",
+  "edition": "2nd, v2.4.1",
+  "source_path_or_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+  "local_path": "data/source/thinkpython2.pdf",
+  "license_or_permission": "CC BY-NC 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "license_evidence_url": "https://greenteapress.com/wp/think-python-2e/",
+  "accessed_at": "2026-11-13",
+  "sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "pdf_total_physical_pages": 244,
+  "selected_pdf_page_range_inclusive": [
+    23,
+    60
+  ],
+  "counting_rule": "Only actual PDF physical pages 23-60 from chapters 1-4, >=500 characters after whitespace normalization. Exclude near-empty pages and all front matter.",
+  "min_chars_per_content_page": 500,
+  "content_page_count": 35,
+  "content_char_count": 68585,
+  "metadata_filter_field": "chapter",
+  "metadata_filter_values": [
+    {
+      "value": "chapter_1",
+      "title": "The way of the program",
+      "starts_pdf_page": 23
+    },
+    {
+      "value": "chapter_2",
+      "title": "Variables, expressions and statements",
+      "starts_pdf_page": 31
+    },
+    {
+      "value": "chapter_3",
+      "title": "Functions",
+      "starts_pdf_page": 39
+    },
+    {
+      "value": "chapter_4",
+      "title": "Case study: interface design",
+      "starts_pdf_page": 51
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "thinkpython2_pdf_p023",
+      "pdf_page": 23,
+      "printed_page": 1,
+      "chapter": "chapter_1",
+      "char_count": 1955
+    },
+    {
+      "page_id": "thinkpython2_pdf_p024",
+      "pdf_page": 24,
+      "printed_page": 2,
+      "chapter": "chapter_1",
+      "char_count": 2673
+    },
+    {
+      "page_id": "thinkpython2_pdf_p025",
+      "pdf_page": 25,
+      "printed_page": 3,
+      "chapter": "chapter_1",
+      "char_count": 1748
+    },
+    {
+      "page_id": "thinkpython2_pdf_p026",
+      "pdf_page": 26,
+      "printed_page": 4,
+      "chapter": "chapter_1",
+      "char_count": 1945
+    },
+    {
+      "page_id": "thinkpython2_pdf_p027",
+      "pdf_page": 27,
+      "printed_page": 5,
+      "chapter": "chapter_1",
+      "char_count": 2845
+    },
+    {
+      "page_id": "thinkpython2_pdf_p028",
+      "pdf_page": 28,
+      "printed_page": 6,
+      "chapter": "chapter_1",
+      "char_count": 2622
+    },
+    {
+      "page_id": "thinkpython2_pdf_p029",
+      "pdf_page": 29,
+      "printed_page": 7,
+      "chapter": "chapter_1",
+      "char_count": 2174
+    },
+    {
+      "page_id": "thinkpython2_pdf_p030",
+      "pdf_page": 30,
+      "printed_page": 8,
+      "chapter": "chapter_1",
+      "char_count": 599
+    },
+    {
+      "page_id": "thinkpython2_pdf_p031",
+      "pdf_page": 31,
+      "printed_page": 9,
+      "chapter": "chapter_2",
+      "char_count": 1118
+    },
+    {
+      "page_id": "thinkpython2_pdf_p032",
+      "pdf_page": 32,
+      "printed_page": 10,
+      "chapter": "chapter_2",
+      "char_count": 1903
+    },
+    {
+      "page_id": "thinkpython2_pdf_p033",
+      "pdf_page": 33,
+      "printed_page": 11,
+      "chapter": "chapter_2",
+      "char_count": 2382
+    },
+    {
+      "page_id": "thinkpython2_pdf_p034",
+      "pdf_page": 34,
+      "printed_page": 12,
+      "chapter": "chapter_2",
+      "char_count": 2236
+    },
+    {
+      "page_id": "thinkpython2_pdf_p035",
+      "pdf_page": 35,
+      "printed_page": 13,
+      "chapter": "chapter_2",
+      "char_count": 2641
+    },
+    {
+      "page_id": "thinkpython2_pdf_p036",
+      "pdf_page": 36,
+      "printed_page": 14,
+      "chapter": "chapter_2",
+      "char_count": 1922
+    },
+    {
+      "page_id": "thinkpython2_pdf_p037",
+      "pdf_page": 37,
+      "printed_page": 15,
+      "chapter": "chapter_2",
+      "char_count": 884
+    },
+    {
+      "page_id": "thinkpython2_pdf_p039",
+      "pdf_page": 39,
+      "printed_page": 17,
+      "chapter": "chapter_3",
+      "char_count": 1130
+    },
+    {
+      "page_id": "thinkpython2_pdf_p040",
+      "pdf_page": 40,
+      "printed_page": 18,
+      "chapter": "chapter_3",
+      "char_count": 1761
+    },
+    {
+      "page_id": "thinkpython2_pdf_p041",
+      "pdf_page": 41,
+      "printed_page": 19,
+      "chapter": "chapter_3",
+      "char_count": 2578
+    },
+    {
+      "page_id": "thinkpython2_pdf_p042",
+      "pdf_page": 42,
+      "printed_page": 20,
+      "chapter": "chapter_3",
+      "char_count": 1598
+    },
+    {
+      "page_id": "thinkpython2_pdf_p043",
+      "pdf_page": 43,
+      "printed_page": 21,
+      "chapter": "chapter_3",
+      "char_count": 2486
+    },
+    {
+      "page_id": "thinkpython2_pdf_p044",
+      "pdf_page": 44,
+      "printed_page": 22,
+      "chapter": "chapter_3",
+      "char_count": 1521
+    },
+    {
+      "page_id": "thinkpython2_pdf_p045",
+      "pdf_page": 45,
+      "printed_page": 23,
+      "chapter": "chapter_3",
+      "char_count": 1817
+    },
+    {
+      "page_id": "thinkpython2_pdf_p046",
+      "pdf_page": 46,
+      "printed_page": 24,
+      "chapter": "chapter_3",
+      "char_count": 1883
+    },
+    {
+      "page_id": "thinkpython2_pdf_p047",
+      "pdf_page": 47,
+      "printed_page": 25,
+      "chapter": "chapter_3",
+      "char_count": 2526
+    },
+    {
+      "page_id": "thinkpython2_pdf_p048",
+      "pdf_page": 48,
+      "printed_page": 26,
+      "chapter": "chapter_3",
+      "char_count": 2164
+    },
+    {
+      "page_id": "thinkpython2_pdf_p049",
+      "pdf_page": 49,
+      "printed_page": 27,
+      "chapter": "chapter_3",
+      "char_count": 1561
+    },
+    {
+      "page_id": "thinkpython2_pdf_p051",
+      "pdf_page": 51,
+      "printed_page": 29,
+      "chapter": "chapter_4",
+      "char_count": 1356
+    },
+    {
+      "page_id": "thinkpython2_pdf_p052",
+      "pdf_page": 52,
+      "printed_page": 30,
+      "chapter": "chapter_4",
+      "char_count": 1676
+    },
+    {
+      "page_id": "thinkpython2_pdf_p053",
+      "pdf_page": 53,
+      "printed_page": 31,
+      "chapter": "chapter_4",
+      "char_count": 2546
+    },
+    {
+      "page_id": "thinkpython2_pdf_p054",
+      "pdf_page": 54,
+      "printed_page": 32,
+      "chapter": "chapter_4",
+      "char_count": 1791
+    },
+    {
+      "page_id": "thinkpython2_pdf_p055",
+      "pdf_page": 55,
+      "printed_page": 33,
+      "chapter": "chapter_4",
+      "char_count": 2464
+    },
+    {
+      "page_id": "thinkpython2_pdf_p056",
+      "pdf_page": 56,
+      "printed_page": 34,
+      "chapter": "chapter_4",
+      "char_count": 1689
+    },
+    {
+      "page_id": "thinkpython2_pdf_p057",
+      "pdf_page": 57,
+      "printed_page": 35,
+      "chapter": "chapter_4",
+      "char_count": 2023
+    },
+    {
+      "page_id": "thinkpython2_pdf_p058",
+      "pdf_page": 58,
+      "printed_page": 36,
+      "chapter": "chapter_4",
+      "char_count": 2460
+    },
+    {
+      "page_id": "thinkpython2_pdf_p059",
+      "pdf_page": 59,
+      "printed_page": 37,
+      "chapter": "chapter_4",
+      "char_count": 1908
+    }
+  ],
+  "excluded_in_selected_range": [
+    {
+      "page_id": "thinkpython2_pdf_p038",
+      "pdf_page": 38,
+      "printed_page": 16,
+      "chapter": "chapter_2",
+      "char_count": 51,
+      "reason": "under 500 extracted characters"
+    },
+    {
+      "page_id": "thinkpython2_pdf_p050",
+      "pdf_page": 50,
+      "printed_page": 28,
+      "chapter": "chapter_3",
+      "char_count": 402,
+      "reason": "under 500 extracted characters"
+    },
+    {
+      "page_id": "thinkpython2_pdf_p060",
+      "pdf_page": 60,
+      "printed_page": 38,
+      "chapter": "chapter_4",
+      "char_count": 395,
+      "reason": "under 500 extracted characters"
+    }
+  ],
+  "extraction_notes": "Certain font glyphs have imperfect extraction; manually verify all CP2 evidence against the PDF."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "locked-before-retrieval",
+  "date": "2026-11-13",
+  "corpus_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "questions_canonical_sha256": "af575c7dada18ce4f417091127bfd0bf4c0c9b5839b588eb001cb55c1fd5d9bf",
+  "dev_ids": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15"
+  ],
+  "test_ids": [
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20"
+  ],
+  "selection_rule": "Select on dev only: maximize Evidence Hit@3, then Hit@1, coherence, and resource use. Evaluate test after freezing selection.",
+  "notes": "No retrieval metrics were inspected when this benchmark was created."
+}
